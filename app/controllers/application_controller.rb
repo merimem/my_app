@@ -2,6 +2,7 @@ class ApplicationController < ActionController::Base
   protect_from_forgery with: :exception
 
   helper_method :current_user, :logged_in?
+  
   def current_user
   	@current_user ||= User.find(session[:user_id]) if session[:user_id]
   	#return this user if sessions user_id meaning that there is a user_id that stored in our browser (session hash)
