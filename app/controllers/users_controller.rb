@@ -29,7 +29,7 @@ class UsersController < ApplicationController
 	def update
 		
 		if @user.update(user_params)
-			flash[:success] = "Votre compte a été édité en succés"
+			flash[:success] = "Votre compte a été édité avec succés"
 			redirect_to articles_path
 		else
 			render 'edit'
