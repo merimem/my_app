@@ -1,0 +1,14 @@
+
+<%= form_for([@article, @article.comments.build]) do |f| %>
+ <div class='form-group'>
+    <div class='control-label col-sm-2'>
+      <%= f.label :Commentaire %> <br/>
+    </div>
+    <div class='col-sm-8'>
+      <%= f.text_area :content, class: "form-control", autofocus: true%>
+    </div>
+  </div>  
+  <div class ="center"><%= f.submit "Ajouter commentaire" %>
+</div>
+<% end %>
+   

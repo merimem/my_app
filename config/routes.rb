@@ -4,7 +4,9 @@ Rails.application.routes.draw do
   get 'about', to: 'welcome#about'
   get 'contact', to: 'welcome#contact'
   
-  resources :articles
+  resources :articles do
+    resources :comments
+  end
 
   get 'signup', to: 'users#new'
   get 'login', to: 'sessions#new'
@@ -14,4 +16,5 @@ Rails.application.routes.draw do
   resources :users, except: [:new]
 
   resources :categories, except: [:destroy]
+  
 end

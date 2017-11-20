@@ -28,3 +28,13 @@
 		<%= link_to "Retour à la liste des articles", articles_path, class:"btn btn-xs btn-success" %>
 	</div>
 </div>
+		<div class="col-xs-8 col-xs-offset-2">
+			<h4>Commentaires</h4> 
+			<%= render 'comments/comments', obj: @article_comments %>
+			<%if logged_in? %>
+				
+				<%= render 'comments/form', obj: @article %>
+				
+			<% end %>
+		</div>	
+
