@@ -1,24 +1,7 @@
 # README
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+Le code source correspondt à une application web d'un blog de tourisme.
+L'application a été crée avec le framework Ruby on Rails.
+Elle est hébérgée sur: https://blog-tourisme.herokuapp.com/
 
-Things you may want to cover:
-
-* Ruby version
-
-* System dependencies
-
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-
+N'hésitez pas à créer un compte et publier vos articles :)
